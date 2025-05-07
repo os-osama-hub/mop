@@ -1,0 +1,15 @@
+"use client";
+import { showReport } from "@/lib/safeSentry";
+import { HiSpeakerphone } from "react-icons/hi";
+
+export default function BugButton() {
+  return (
+    <button
+      onClick={showReport}
+      className="fixed bottom-4 right-4 z-50 bg-[#1a1a1a] text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 hover:scale-105 transition-transform"
+    >
+      <HiSpeakerphone />
+      Report a Bug
+    </button>
+  );
+}
