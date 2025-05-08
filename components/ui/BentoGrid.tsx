@@ -3,7 +3,9 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "../ui/GradientBg";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 import { useState } from "react";
 import { animate } from "motion";
 import animationData from '@/data/confetti.json'

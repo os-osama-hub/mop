@@ -10,7 +10,7 @@ import {
 } from "three";
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import ThreeGlobe from "three-globe";
+
 import countries from "@/data/globe.json";
 
 // ✅ تصحيح الـ typing: السماح باستخدام <threeGlobe /> بدون خطأ

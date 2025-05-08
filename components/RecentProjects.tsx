@@ -1,7 +1,6 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 
@@ -12,17 +11,14 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple-400">recent projects</span>
       </h1>
+
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map(({id,title,des,img,iconLists,link}) => (
+        {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={id}
           >
-            <PinContainer
-              title={title}
-              href={link}
-              
-            >
+            <PinContainer title={title}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -61,17 +57,20 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt="icon" className="p-2" />
                     </div>
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center text-purple hover:underline"
+                >
+                  <p className="lg:text-xl md:text-xs text-sm">Check Live Site</p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+                </a>
               </div>
             </PinContainer>
           </div>

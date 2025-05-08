@@ -1,5 +1,5 @@
 import { Spotlight } from "./ui/Spotlight";
-import { cn } from "@/utils/cn";
+
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
