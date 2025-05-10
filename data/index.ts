@@ -95,6 +95,30 @@ export const navItems = [
       iconLists: ["re.svg", "jvs.webp", "/tail.svg"],
       link: "https://ostodoapp.netlify.app/",
     },
+    {
+      id: 4,
+      title: "Login App",
+      des: "Login and Sign Up apps help users create accounts and sign in to access their own data and features within a website or mobile app.",
+      img: "/log.png",
+      iconLists: ["re.svg", "jvs.webp", "/tail.svg"],
+      link: "https://osloginsingup.netlify.app/",
+    },
+    {
+      id: 5,
+      title: "Random Quote Generator",
+      des: "A Random Quote Generator is a small web application that displays a different inspirational.", 
+      img: "/random.png",
+      iconLists: ["re.svg", "jvs.webp", "/tail.svg"],
+      link: "https://randomq.netlify.app/",
+    },
+    {
+      id: 5,
+      title: "Convertor",
+      des: "Convert money means exchanging one currency for another based on current exchange rates.", 
+      img: "/conv.png",
+      iconLists: ["re.svg", "jvs.webp", "/tail.svg"],
+      link: "https://osconv.netlify.app/",
+    },
   
   ];
   

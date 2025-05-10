@@ -19,14 +19,14 @@ const Hero = () => {
       </div>
 
       <div
-        className="h-screen w-full dark:bg-[#00020f] bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+        className="h-screen w-full dark:bg-[#00020f] bg-[#00020f] dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
       >
         {/* Radial gradient for the container to give a faded look */}
         <div
           // chnage the bg to bg-black-100, so it matches the bg color and will blend in
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#00020f]
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+         bg-[#00020f] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
 
@@ -42,7 +42,7 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 md:text-lg lg:text-2xl">
             Hi, I&apos;m Osama, a Front-end Developer based in Jordan
           </p>
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}

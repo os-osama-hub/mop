@@ -7,7 +7,6 @@ import RecentProjects from "../components/RecentProjects";
 import { navItems } from "@/data";
 import Eperience from "../components/Experience";
 import Footer from "../components/Footer";
-import BugButton from "@/components/ui/BugButton";
 
 
 
@@ -22,7 +21,7 @@ export default function Home() {
     <RecentProjects/>
     <Eperience/>
     <Footer/>
-    <BugButton/>
+    
   </div>
  </main>
   );
